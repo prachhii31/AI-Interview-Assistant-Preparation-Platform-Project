@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="login-container">
+
+    <h1>AI Interview Assistant</h1>
+
+    <form action="/login" method="POST">
+
+        <input type="email"
+               name="email"
+               placeholder="Enter Email"
+               required>
+
+        <input type="password"
+               name="password"
+               placeholder="Enter Password"
+               required>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

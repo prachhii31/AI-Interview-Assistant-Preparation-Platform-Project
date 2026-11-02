@@ -1,0 +1,158 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Questions</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Interview Questions</h1>
+
+    <div class="card">
+
+        <h2>Software Developer</h2>
+
+        <div class="levels">
+
+            <button onclick="showLevel('easy')">
+                Easy
+            </button>
+
+            <button onclick="showLevel('medium')">
+                Medium
+            </button>
+
+            <button onclick="showLevel('hard')">
+                Hard
+            </button>
+
+        </div>
+
+        <div id="easy" class="level">
+
+            <div class="question">
+                What is OOPs?
+            </div>
+
+            <div class="question">
+                What is DBMS?
+            </div>
+
+        </div>
+
+        <div id="medium" class="level">
+
+            <div class="question">
+                Explain normalization.
+            </div>
+
+            <div class="question">
+                Difference between process and thread.
+            </div>
+
+        </div>
+
+        <div id="hard" class="level">
+
+            <div class="question">
+                Explain deadlock handling.
+            </div>
+
+            <div class="question">
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Questions</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Interview Questions</h1>
+
+    <button onclick="showLevel('easy')">
+        Easy
+    </button>
+
+    <button onclick="showLevel('medium')">
+        Medium
+    </button>
+
+    <button onclick="showLevel('hard')">
+        Hard
+    </button>
+
+    <div id="easy" class="level">
+        <div class="question">
+            What is OOPs?
+        </div>
+    </div>
+
+    <div id="medium" class="level">
+        <div class="question">
+            Explain normalization.
+        </div>
+    </div>
+
+    <div id="hard" class="level">
+        <div class="question">
+            Explain deadlock.
+        </div>
+    </div>
+
+    <!-- Mock Interview Section -->
+
+    <div class="mock">
+
+        <h2>Mock Interview</h2>
+
+        <video id="video" autoplay playsinline muted></video>
+
+        <br><br>
+
+        <button onclick="startCamera()">
+            Start Camera
+        </button>
+
+        <button onclick="showFeedback()">
+            Submit Answer
+        </button>
+
+        <div id="feedback" class="feedback">
+            Good attempt! AI feedback will appear here.
+        </div>
+
+    </div>
+
+</div>
+<button onclick="startRecording()">
+    Start Recording
+</button>
+
+<button onclick="stopRecording()">
+    Stop Recording
+</button>
+
+<br><br>
+
+<a id="downloadLink" style="display:none;">
+    Download Interview Video
+</a>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
